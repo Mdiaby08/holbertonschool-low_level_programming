@@ -30,5 +30,5 @@ else
 {
 printf("and is less than 6 and not zero");
 }
-    return (0);
+return (0);
 }
