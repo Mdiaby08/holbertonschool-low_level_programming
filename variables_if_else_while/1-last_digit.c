@@ -5,7 +5,7 @@
 /**
 *main - Derteminate the last digit
 *
-*Result: Always 0 (sucess) 
+*Result: Always 0 (sucess)
 */
 int main(void)
 {
@@ -31,4 +31,4 @@ else
 printf(" and is less than 6 and not 0\n");
 }
 return (0);
-}
+} 
