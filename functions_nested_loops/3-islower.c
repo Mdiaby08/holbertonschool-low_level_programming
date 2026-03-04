@@ -6,10 +6,10 @@
 *Returns: 1 lowercase, 0 otherwise 
 */
 
-int c;
-if (c >= 'a' && 'z'<= c);
+int _islower(int c)
 {
-return (1)
+if(c >= 'a' && 'z'<= c)
+return (1);
 else
-return (0)
+return (0);
 }
