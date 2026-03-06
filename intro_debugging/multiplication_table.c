@@ -9,7 +9,6 @@ void print_table(int size)
         for (col = 1; col <= size; col++)
         {
             printf("%d ", row * col);
-            col++;
         }
         printf("\n");
     }
