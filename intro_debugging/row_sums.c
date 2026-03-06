@@ -13,17 +13,10 @@ int row_sum(int row, int cols)
 
 int total_sum(int rows, int cols)
 {
-    int r;
-    int total = 0;
-    int current = 0;
+    int sum_rows = (rows * (rows + 1)) / 2; // sum of first 'rows' numbers
+    int sum_cols = (cols * (cols + 1)) / 2; // sum of first 'cols' numbers
 
-    for (r = 1; r <= rows; r++)
-    {
-        current += row_sum(r, cols);
-        total += current;
-    }
-
-    return total;
+    return sum_rows * sum_cols;
 }
 
 /* -- DO NOT Modify the code below this line -- */
