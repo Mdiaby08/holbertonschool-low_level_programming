@@ -4,7 +4,7 @@
 
 /**
 *_strdup - copy a string of character
-*@str: dtring of character
+*@str: string of character
 *
 *Return: string of char, or NULL if it fails
 */
