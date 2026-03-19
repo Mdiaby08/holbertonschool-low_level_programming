@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
 *_strdup - copy a string of character
@@ -8,7 +7,6 @@
 *
 *Return: string of char, or NULL if it fails
 */
-
 char *_strdup(char *str)
 {
 char *p;
