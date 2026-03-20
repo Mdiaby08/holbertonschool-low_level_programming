@@ -3,11 +3,10 @@
 
 /**
  * array_range - creates an array of integers
- * @min: first value of the array
- * @max: last value of the array
+ * @min: minimum value
+ * @max: maximum value
  *
- * Return: pointer to the newly created array,
- *         or NULL if min > max or malloc fails
+ * Return: pointer to the array, or NULL on failure
  */
 int *array_range(int min, int max)
 {
