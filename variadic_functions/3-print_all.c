@@ -24,21 +24,23 @@ void print_all(const char * const format, ...)
         {
             printf("%s", sep);
 
-            if (format[i] == 'c')
-                printf("%c", va_arg(args, int));
-
-            if (format[i] == 'i')
-                printf("%d", va_arg(args, int));
-
-            if (format[i] == 'f')
-                printf("%f", (double)va_arg(args, double));
-
-            if (format[i] == 's')
+            switch (format[i])
             {
-                str = va_arg(args, char *);
-                if (str == NULL)
-                    str = "(nil)";
-                printf("%s", str);
+                case 'c':
+                    printf("%c", va_arg(args, int));
+                    break;
+                case 'i':
+                    printf("%d", va_arg(args, int));
+                    break;
+                case 'f':
+                    printf("%f", (double)va_arg(args, double));
+                    break;
+                case 's':
+                    str = va_arg(args, char *);
+                    if (!str)
+                        str = "(nil)";
+                    printf("%s", str);
+                    break;
             }
 
             sep = ", ";
