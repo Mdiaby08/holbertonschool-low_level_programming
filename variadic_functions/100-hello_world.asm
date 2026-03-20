@@ -6,12 +6,12 @@ section .text
     global _start
 
 _start:
-    mov rax, 1          ; syscall: write
-    mov rdi, 1          ; file descriptor: stdout
-    mov rsi, msg        ; address of message
-    mov rdx, len        ; length of message
-    syscall             ; perform write
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, msg
+    mov rdx, len
+    syscall
 
-    mov rax, 60         ; syscall: exit
-    xor rdi, rdi        ; exit code 0
+    mov rax, 60
+    xor rdi, rdi
     syscall
